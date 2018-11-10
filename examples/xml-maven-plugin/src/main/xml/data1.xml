@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database xmlns="examples:product" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="data1">
+  
+  <categories>
+    <category id="1" title="Category 1" />
+    <category id="2" title="Category 2" />
+    <category id="3" title="Category 3" />
+  </categories>
+
+  <products>
+    <product id="1">
+      <name>Product 1</name>
+      <description>This is some product, nice?</description>
+      <categories ref="1 2" />
+    </product>  
+    <product id="2">
+      <name>Product 2</name>
+      <description>This is another product, nice?</description>
+      <categories ref="1" />
+    </product>    
+    <product id="3">
+      <name>Product 3</name>
+      <description>This is a third product, nice?</description>
+      <categories ref="3" />
+    </product>    
+  </products>
+
+</database>

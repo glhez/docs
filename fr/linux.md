@@ -30,3 +30,11 @@ Il y est notamment préconisé de changer `gfx.xrender.enabled` à `false` dans 
 convmv -f cp1252 -t utf-8 -r *
 ```
 
+## Convertir un disque en image de disque virtuelle VHD
+
+Lire [How to create VHD disk image from a Linux live system?](https://superuser.com/questions/410940/how-to-create-vhd-disk-image-from-a-linux-live-system#412495), la commande est la suivante :
+
+```
+VBoxManage convertfromraw myfile.dd myfile.vhd --format VHD
+```
+

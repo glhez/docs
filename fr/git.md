@@ -56,3 +56,45 @@ la configuration `credential.helper` (qui peut être locale ou globale).
 - Stockage en clair : stocke que dans `~/.git-credentials` l'url `https://user:password@host`.
 
         git config --global credential.helper store     
+
+## Changer l'auteur ou le committer
+
+```
+git filter-branch --commit-filter '
+  if [ "$GIT_AUTHOR_EMAIL" =~ "foo.bar@*" ]; then
+    GIT_AUTHOR_NAME="Foo Bar"; 
+    GIT_AUTHOR_EMAIL="foo.bar@example.com";
+  fi
+  if [ "$GIT_COMMITTER_EMAIL" =~ "foo.bar@*" ]; then
+    GIT_COMMITTER_NAME="Foo Bar";
+    GIT_COMMITTER_EMAIL="foo.bar@example.com";
+  fi
+  
+  git commit-tree "$@";
+' -- "$@"
+```
+
+## Changer le nom de l'utilisateur et son email en local
+
+```
+git config --local user.name 'Foo Bar'
+git config --local user.email 'foo.bar@example.com'
+```
+
+## Changer la date d'un (ou plusieurs) commit
+
+**Note :** on change à la fois la date de création (`GIT_AUTHOR_DATE`) et celle de commit (`GIT_COMMITTER_DATE`).
+
+```
+git filter-branch --commit-filter '
+  GIT_AUTHOR_DATE="$(date --iso-8601=seconds)"
+  GIT_COMMITTER_DATE="${GIT_AUTHOR_DATE}"
+  git commit-tree "$@";
+' --  "$@"
+```
+
+## Positionner l'indicateur _executable_ sur un fichier Bash/etc
+
+Voir cette réponse : [How to create file execute mode permissions in Git on Windows?](https://stackoverflow.com/questions/21691202/how-to-create-file-execute-mode-permissions-in-git-on-windows)
+
+

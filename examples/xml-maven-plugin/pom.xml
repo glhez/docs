@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>example</groupId>
+  <artifactId>xml-maven-plugin-examples</artifactId>
+  <version>1</version>
+  <packaging>pom</packaging>
+
+  <build><plugins>
+    <plugin>
+      <groupId>org.codehaus.mojo</groupId>
+      <artifactId>xml-maven-plugin</artifactId>
+      <version>1.0.1</version>
+      <executions>
+        <execution>
+          <phase>generate-resources</phase>
+          <goals>
+            <goal>transform</goal>
+          </goals>
+          <configuration>
+            <transformationSets>
+              <transformationSet>
+                <dir>src/main/xml</dir>
+                <includes>
+                  <include>**/*.xml</include>
+                </includes>
+                <stylesheet>src/main/xslt/stylesheet.xsl</stylesheet>
+                <outputDir>${project.build.outputDirectory}</outputDir>
+                <parameters>
+                  <!-- this is not resolved :( -->
+                  <parameter> <name>output.directory</name>   <value>target/classes</value> </parameter>
+                </parameters>
+              </transformationSet>
+            </transformationSets>
+          </configuration>
+        </execution>
+      </executions>
+      <dependencies>
+        <dependency>
+          <groupId>net.sf.saxon</groupId>
+          <artifactId>Saxon-HE</artifactId>
+          <version>9.8.0-5</version>
+        </dependency>
+      </dependencies>
+    </plugin></plugins>
+  </build>
+</project>
