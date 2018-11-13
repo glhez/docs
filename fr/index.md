@@ -4,6 +4,9 @@
 
 - [Fake Name Generator](http://www.fakenamegenerator.com/gen-random-fr-fr.php)
 - [OpenNIC](https://www.opennicproject.org/)
+- [A propos de la durée de conservation des logs de connexion](https://korben.info/a-propos-de-duree-de-conservation-logs-de-connexion.html)
+- [Windows Privacy Tweaker](https://www.phrozen.io/freeware/windows-privacy-tweaker/) et [Microsoft](https://sebsauvage.net/wiki/doku.php?id=microsoft)
+- [Firefox Monitor](https://monitor.firefox.com/)
 
 **VirtualBox**
 
@@ -29,6 +32,7 @@
   - [Keybase](https://keybase.io/)
   - [Editorconfig](https://editorconfig.org/): permet de configurer certains aspects des éditeurs avec une configuration par défaut (sur les tabulations, fin de ligne, etc).
   - [Firefox Send](https://send.firefox.com/): envoi de fichier de façon confidentielle et chiffrée
+  - [The Front-End Checklist](https://frontendchecklist.io/)
 - Editeurs / Markdown :
   - [Markable.in](http://markable.in/editor) : éditeur Markdown online.
   - [CuteMarkEd](https://github.com/cloose/CuteMarkEd) : editeur Markdown offline
@@ -41,6 +45,7 @@
   - [Avidemux](http://fixounet.free.fr/avidemux/)
   - [Colorize Photos](http://demos.algorithmia.com/colorize-photos/) : colorisation de photos/images en noir et blanc.
   - [Photopea](https://www.photopea.com/): photoshop like en ligne.
+  - [Open Broadcaster Software](https://obsproject.com/)
 - Nécessitant un serveur Web :
   - [MediaGoblin – Hébergez votre propre clone de Youtube](http://korben.info/youtube-clone.html)
   - [Lychee](https://github.com/electerious/Lychee)
@@ -57,7 +62,11 @@
 - [Type de prises électriques](http://www.worldstandards.eu/electricity/plugs-and-sockets/)
 - [You Only Need to Wipe a Disk Once to Securely Erase It](https://www.howtogeek.com/115573/htg-explains-why-you-only-have-to-wipe-a-disk-once-to-erase-it/)
 - [Devtube](https://dev.tube/): Youtube pour les devs.
+- [GeeksforGeeks | A computer science portal for geeks](https://www.geeksforgeeks.org/)  
 
+**Jeux video**
+
+- [RetroArch](https://www.retroarch.com/index.php?page=linux-instructions): un Linux embarquant un certain nombre d'émulateurs.
 
 ## Développement Web
 
@@ -71,6 +80,8 @@
   - [Icomoon](https://icomoon.io/)
   - [Générateur d'image](https://dummyimage.com/) - utile pour des tests CSS.
   - [Base de données de maquette de site web (uidb.io)](https://uidb.io/)
+  - [Adminer](https://www.adminer.org/#download): un script PHP pour gérer une base mySQL depuis une interface Web.
+  - [SQLPad](https://github.com/rickbergfalk/sqlpad): outils pour gérer différentes bases et basé sur NodeJS.
 - CSS
   - [Transformation CSS3](http://westciv.com/tools/3Dtransforms/index.html)	
   - [Générateur de CSS 3.1 Gradient](http://www.css3factory.com/linear-gradients/), [Un autre](http://www.colorzilla.com/gradient-editor)
@@ -110,6 +121,7 @@
   - [Standard build-in objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects)
   - [Handlebars](http://handlebarsjs.com/) (templating Javascript)
   - [QunitJs](http://qunitjs.com/intro/) (Test unitaire Javascript)
+  - [Reading files in JavaScript using the File APIs](https://www.html5rocks.com/en/tutorials/file/dndfiles/)
 - Serveur Apache/Nginx
   - [What is the Apache Scoreboard?(http://g33kinfo.com/info/archives/6641)
   - [absolute_redirect](http://nginx.org/en/docs/http/ngx_http_core_module.html#absolute_redirect)
@@ -252,6 +264,7 @@ Voir également: [Java](java.md), [SQL](sql.md).
 - [9 commands to check hard disk partitions and disk space on Linux](http://www.binarytides.com/linux-command-check-disk-partitions/) (et surtout **cfdisk**, un fdisk en ncurse :))
 - `rlwrap` : commande Linux wrappant n'importe quel programme (ex: `rlwrap jjs`) pour pouvoir utiliser un historique de commande (via flèche haut/bas) et même faire du _reverse search_ (Ctrl R).
 - [`lnav`](https://github.com/tstack/lnav) : formatte les logs (ex: syslog, apache, ...) de manière avancée et colorisée.
+- [LAZY script](https://github.com/arismelachroinos/lscript): _a script for Kali Linux that automates many procedures about wifi penetration and hacking_.
 
 **Gentoo**
 
